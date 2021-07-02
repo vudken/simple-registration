@@ -1,0 +1,127 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(228, 227, 227);
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.box {
+    max-width: 40%;
+    margin: 0px auto;
+    border: 1.5px solid rgb(182, 177, 177);
+    border-radius: 5px;
+    padding: 40px;
+    box-shadow: 0 0 2px rgb(182, 177, 177);
+    background-color: white;
+}
+
+.flex {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+@font-face {
+    font-family: Gotham-Bold;
+    src: url("./fonts/Gotham-Bold\ 700.otf");
+}
+
+h1 {
+    align-self: center;
+    font-family: Gotham-Bold;
+    margin-bottom: 20px;
+}
+
+input, button {
+    min-height: 40px;
+    margin-top: 15px;
+    border: .5px solid rgba(223, 219, 219, 0.233);
+    border-radius: 5px;
+    box-shadow: 0 0 1px;
+    padding-left: 8px;
+    outline-width: 0;
+}
+
+input:focus {
+    box-shadow: 0 0 1px 1.5px rgba(9, 174, 250, 0.521);
+}
+
+@font-face {
+	font-family: 'fontello';
+	src: url('./fonts/fontello/fontello.eot?0000');
+	src: url('./fonts/fontello/fontello.eot?0000#iefix') format('embedded-opentype'),
+	     url('./fonts/fontello/fontello.woff2?0000') format('woff2'),
+	     url('./fonts/fontello/fontello.woff?0000') format('woff'),
+	     url('./fonts/fontello/fontello.ttf?0000') format('truetype'),
+	     url('./fonts/fontello/fontello.svg?0000#fontello') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+#secure-code {
+	font-family: "fontello";
+	letter-spacing:3px;
+}
+#secure-code::placeholder {
+    font-family: sans-serif;
+    letter-spacing: 0px;
+}
+
+i#pass-status {
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: rgb(184, 170, 170);
+    margin-top: 20px;
+}
+
+.create-acc-btn {
+    min-height: 50px;
+    font-size: 1em;
+    border: none;
+    box-shadow: none;
+    font-family: Gotham-Bold;
+    color: white;
+    background-color: rgb(27, 209, 27);
+}
+
+.create-acc-btn:hover {
+    background-color: rgb(24, 155, 46);
+    transition: background-color 100ms linear;
+}
+
+@media (max-width: 900px) {
+    .container {
+        padding-top: 25%;
+    }
+    .box {
+        max-width: none;
+    }
+}
+
+@media (max-width: 350px) {
+    :root {
+        font-size: 0.85em;
+    }
+    .container {
+        max-width: 90%;
+        padding-top: 15%;
+    }
+}
