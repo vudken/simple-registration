@@ -1,5 +1,5 @@
 <?php
-    const SECURE_CODE = 'k0MAH9@';
+    const SECURE_CODE = '0000';
 
     $login = filter_var(trim($_POST['login'], FILTER_SANITIZE_STRING));
     $password = $_POST['password'];
